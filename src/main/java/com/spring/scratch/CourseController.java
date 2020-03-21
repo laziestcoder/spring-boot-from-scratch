@@ -2,6 +2,7 @@ package com.spring.scratch;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -17,12 +18,14 @@ import javax.servlet.http.HttpSession;
 public class CourseController {
     @RequestMapping("courses")
 //    @ResponseBody // it will return only courses.jsp
-    public String courses(HttpServletRequest request) {
+    public String courses(
+            @RequestParam("cname") String courseName, HttpSession session
+    ) {
 //        System.out.println("Welcome to my first Spring Interface");
-        HttpSession session = request.getSession();
-        String courseName = request.getParameter("coursename");
+//        HttpSession session = request.getSession();
+//        String courseName = request.getParameter("courseName");
 //        System.out.println("Course name is: " + courseName);
-        session.setAttribute("coursename", courseName);
+        session.setAttribute("courseName", courseName);
         return "courses";
     }
 }

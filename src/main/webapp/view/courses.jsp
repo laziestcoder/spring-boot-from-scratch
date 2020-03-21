@@ -20,6 +20,6 @@ Top Selling courses are:
 3. Big Data
 4. AWS
 5. RPA
-${coursename}
+${courseName}
 </body>
 </html>
