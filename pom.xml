@@ -72,6 +72,7 @@
 <!--            <artifactId>thymeleaf-extras-java8time</artifactId>-->
 <!--        </dependency>-->
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
