@@ -33,6 +33,7 @@
             <artifactId>tomcat-jasper</artifactId>
             <version>9.0.29</version>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -71,6 +72,8 @@
 <!--            <groupId>org.thymeleaf.extras</groupId>-->
 <!--            <artifactId>thymeleaf-extras-java8time</artifactId>-->
 <!--        </dependency>-->
+=======
+>>>>>>> 325afc1 (Dependency Injection)
     </dependencies>
 
     <build>
