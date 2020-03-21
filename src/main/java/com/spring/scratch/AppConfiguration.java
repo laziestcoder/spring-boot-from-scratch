@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class AppConfiguration {
     @RequestMapping("/")
     public String hello() {
-        return "Hello World";
+        return "Welcome to Spring-Boot from Scratch";
     }
 }
