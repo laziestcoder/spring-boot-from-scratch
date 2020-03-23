@@ -20,7 +20,8 @@ public class CourseController {
     @RequestMapping("courses")
 //    @ResponseBody // it will return only courses.jsp
     public ModelAndView courses(
-            @RequestParam("cname") String courseName, HttpSession session
+            @RequestParam("cname") String courseName
+//            HttpSession session
     ) {
 //        System.out.println("Welcome to my first Spring Interface");
 //        HttpSession session = request.getSession();
