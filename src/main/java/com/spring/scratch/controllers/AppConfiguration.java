@@ -1,4 +1,4 @@
-package com.spring.scratch;
+package com.spring.scratch.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

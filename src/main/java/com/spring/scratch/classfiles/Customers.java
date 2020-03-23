@@ -1,4 +1,4 @@
-package com.spring.scratch;
+package com.spring.scratch.classfiles;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

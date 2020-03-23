@@ -1,4 +1,4 @@
-package com.spring.scratch;
+package com.spring.scratch.classfiles;
 
 import org.springframework.stereotype.Component;
 
