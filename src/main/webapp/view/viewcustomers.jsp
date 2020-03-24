@@ -15,8 +15,9 @@
 <body>
 <h1>View Customers Details</h1>
 <h2>Details as submitted as follows: </h2>
-<h4>Customer id: ${cid}</h4>
-<h4>Customer name: ${cname}</h4>
-<h4>Customer email: ${cemail}</h4>
+<form action="getdetails" method="post">
+    <input type="number" name="cid">
+    <input type="submit" value="Submit">
+</form>
 </body>
 </html>
