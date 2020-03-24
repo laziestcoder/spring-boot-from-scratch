@@ -18,7 +18,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity(name = "customers")
-public class CustomerEntity {
+public class Customers {
     @Id
     private int cid;
     private String cname;

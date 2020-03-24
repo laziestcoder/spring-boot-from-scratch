@@ -14,7 +14,7 @@
 <body>
 <h1>Retrieve Customer Details</h1>
 <h2>Customer Details:</h2>
-<h5>${customerEntity}</h5>
+<h5>${customers}</h5>
 
 </body>
 </html>

@@ -1,11 +1,9 @@
 package com.spring.scratch.controllers;
 
-import com.spring.scratch.classfiles.Customers;
-import com.spring.scratch.entity.CustomerEntity;
+import com.spring.scratch.entity.Customers;
 import com.spring.scratch.repository.CustomersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -19,7 +17,8 @@ import java.util.Optional;
  * Time: ৯:৫৮ PM
  **/
 @Controller
-public class CustomerFromController {
+public class CustomersController {
+//    CRUD
     @Autowired
     CustomersRepository customersRepository;
 
@@ -29,7 +28,7 @@ public class CustomerFromController {
     }
 
     @RequestMapping("details")
-    public String customerAdd(CustomerEntity customersEntity) {
+    public String customerAdd(Customers customersEntity) {
         customersRepository.save(customersEntity);
         return "customer-add";
     }
@@ -42,9 +41,9 @@ public class CustomerFromController {
     @PostMapping("getdetails")
     public ModelAndView getdetails(@RequestParam int cid) {
         ModelAndView mv = new ModelAndView("retrieve");
-        CustomerEntity customerEntity = customersRepository.findById(cid).orElse(null);
-        assert customerEntity != null;
-        mv.addObject(customerEntity);
+        Customers customers = customersRepository.findById(cid).orElse(null);
+        assert customers != null;
+        mv.addObject(customers);
         return mv;
     }
 
@@ -52,37 +51,37 @@ public class CustomerFromController {
     //All Customers
     @RequestMapping("customers")
     @ResponseBody
-    public List<CustomerEntity> getAllCustomers() {
+    public List<Customers> getAllCustomers() {
         return customersRepository.findAll();
     }
 
     //Get Customers By ID
     @RequestMapping("customers/{cid}")
     @ResponseBody
-    public Optional<CustomerEntity> getCustomersFindById(@PathVariable("cid") int cid) {
+    public Optional<Customers> getCustomersFindById(@PathVariable("cid") int cid) {
         return customersRepository.findById(cid);
     }
 
     //Post Customer
     @PostMapping("customers")
-    public CustomerEntity postCustomersData(@RequestBody CustomerEntity customerEntity) {
-        customersRepository.save(customerEntity);
-        return customerEntity;
+    public Customers postCustomersData(@RequestBody Customers customers) {
+        customersRepository.save(customers);
+        return customers;
     }
 
     //Delete Customer by id
     @DeleteMapping("customers/{cid}")
-    public CustomerEntity deleteCustomersFindById(@PathVariable("cid") int cid) {
-        CustomerEntity customerEntity = customersRepository.getOne(cid);
-        customersRepository.delete(customerEntity);
-        return customerEntity;
+    public Customers deleteCustomersFindById(@PathVariable("cid") int cid) {
+        Customers customers = customersRepository.getOne(cid);
+        customersRepository.delete(customers);
+        return customers;
     }
 
     //Update Customer
     @PutMapping(path = "customers/{cid}", consumes = {"application/json"})
-    public CustomerEntity updateCustomers(@RequestBody CustomerEntity customerEntity) {
-        customersRepository.save(customerEntity);
-        return customerEntity;
+    public Customers updateCustomers(@RequestBody Customers customers) {
+        customersRepository.save(customers);
+        return customers;
     }
 
 }
