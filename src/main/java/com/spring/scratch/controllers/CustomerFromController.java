@@ -6,11 +6,11 @@ import com.spring.scratch.repository.CustomersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by IntelliJ IDEA.
@@ -23,7 +23,7 @@ public class CustomerFromController {
     @Autowired
     CustomersRepository customersRepository;
 
-    @RequestMapping("customers")
+    @RequestMapping("customers-new")
     public String customerAdd() {
         return "customer-add";
     }
@@ -48,5 +48,41 @@ public class CustomerFromController {
         return mv;
     }
 
+    //REST API METHODS
+    //All Customers
+    @RequestMapping("customers")
+    @ResponseBody
+    public List<CustomerEntity> getAllCustomers() {
+        return customersRepository.findAll();
+    }
+
+    //Get Customers By ID
+    @RequestMapping("customers/{cid}")
+    @ResponseBody
+    public Optional<CustomerEntity> getCustomersFindById(@PathVariable("cid") int cid) {
+        return customersRepository.findById(cid);
+    }
+
+    //Post Customer
+    @PostMapping("customers")
+    public CustomerEntity postCustomersData(@RequestBody CustomerEntity customerEntity) {
+        customersRepository.save(customerEntity);
+        return customerEntity;
+    }
+
+    //Delete Customer by id
+    @DeleteMapping("customers/{cid}")
+    public CustomerEntity deleteCustomersFindById(@PathVariable("cid") int cid) {
+        CustomerEntity customerEntity = customersRepository.getOne(cid);
+        customersRepository.delete(customerEntity);
+        return customerEntity;
+    }
+
+    //Update Customer
+    @PutMapping(path = "customers/{cid}", consumes = {"application/json"})
+    public CustomerEntity updateCustomers(@RequestBody CustomerEntity customerEntity) {
+        customersRepository.save(customerEntity);
+        return customerEntity;
+    }
 
 }
