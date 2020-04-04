@@ -1,41 +1,34 @@
 package com.spring.scratch.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+/***
+ Created by IntelliJ IDEA.
+ User: towfiq
+ Date: ৩/৪/২০
+ Time: ১০:১২ PM
+ ***/
+@Getter
+@Setter
+@Entity(name = "courses")
 public class Courses {
+    @Id
+    @GeneratedValue
     private int cid;
     private String cname;
-    private String coursename;
-
-    public int getCid() {
-        return cid;
-    }
-
-    public void setCid(int cid) {
-        this.cid = cid;
-    }
-
-    public String getCname() {
-        return cname;
-    }
-
-    public void setCname(String cname) {
-        this.cname = cname;
-    }
-
-    public String getCoursename() {
-        return coursename;
-    }
-
-    public void setCoursename(String coursename) {
-        this.coursename = coursename;
-    }
+    private String courseName;
 
     @Override
     public String toString() {
         return "Courses{" +
                 "cid=" + cid +
                 ", cname='" + cname + '\'' +
-                ", coursename='" + coursename + '\'' +
+                ", coursename='" + courseName + '\'' +
                 '}';
     }
-
 }
