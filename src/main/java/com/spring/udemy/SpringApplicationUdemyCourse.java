@@ -1,6 +1,7 @@
 package com.spring.udemy;
 
-import com.spring.udemy.component.HelloWorld;
+import com.spring.udemy.constructor.InjectByConstructorService;
+import com.spring.udemy.impl.HelloWorldImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -16,9 +17,9 @@ public class SpringApplicationUdemyCourse {
     public static void main(String[] args) {
         ApplicationContext cntx = SpringApplication.run(SpringApplicationUdemyCourse.class, args);
 
-        HelloWorld helloWorld = new HelloWorld();
+        InjectByConstructorService injectByConstructorService = (InjectByConstructorService) cntx.getBean("injectByConstructorService");
 
-        helloWorld.sayHello();
+        injectByConstructorService.getMessage();
     }
 
 }

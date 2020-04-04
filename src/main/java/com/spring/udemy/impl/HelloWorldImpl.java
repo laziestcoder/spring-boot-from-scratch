@@ -1,5 +1,6 @@
-package com.spring.udemy.component;
+package com.spring.udemy.impl;
 
+import com.spring.udemy.service.HelloWorldService;
 import org.springframework.stereotype.Component;
 
 /***
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Component;
  Time: ১:৫৩ AM
  ***/
 @Component
-public class HelloWorld {
+public class HelloWorldImpl implements HelloWorldService {
     public void sayHello() {
         System.out.println("Hello World");
     }
