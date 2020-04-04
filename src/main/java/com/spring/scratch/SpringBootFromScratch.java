@@ -1,14 +1,19 @@
 package com.spring.scratch;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.spring.scratch.classfiles.SubmissionFormCustomers;
 =======
 import com.spring.scratch.classfiles.Customers;
 >>>>>>> 6ae2f49 (WIP 1:47)
+=======
+import com.spring.scratch.classfiles.SubmissionFormCustomers;
+>>>>>>> 7e68c2e (Sprng Security Implemented)
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 @SpringBootApplication
@@ -21,6 +26,10 @@ import com.spring.scratch.classfiles.SubmissionFormCustomers;
 @SpringBootApplication
 
 >>>>>>> 6ae2f49 (WIP 1:47)
+=======
+
+@SpringBootApplication
+>>>>>>> 7e68c2e (Sprng Security Implemented)
 public class SpringBootFromScratch extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder) {

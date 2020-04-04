@@ -76,10 +76,13 @@
 <!--            <groupId>org.thymeleaf.extras</groupId>-->
 <!--            <artifactId>thymeleaf-extras-java8time</artifactId>-->
 <!--        </dependency>-->
+<<<<<<< HEAD
 =======
 >>>>>>> 325afc1 (Dependency Injection)
 =======
 >>>>>>> 6ae2f49 (WIP 1:47)
+=======
+>>>>>>> 7e68c2e (Sprng Security Implemented)
     </dependencies>
 
     <build>
