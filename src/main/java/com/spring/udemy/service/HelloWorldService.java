@@ -7,5 +7,6 @@ package com.spring.udemy.service;
  Time: ২:০৮ AM
  ***/
 public interface HelloWorldService {
-    void sayHello();
+    String sayHello();
+    public String getGreeting();
 }

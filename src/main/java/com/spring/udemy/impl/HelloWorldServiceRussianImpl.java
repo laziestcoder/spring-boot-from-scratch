@@ -1,23 +1,21 @@
 package com.spring.udemy.impl;
 
 import com.spring.udemy.service.HelloWorldService;
-import org.springframework.stereotype.Component;
 
 /***
  Created by IntelliJ IDEA.
  User: towfiq
  Date: ৫/৪/২০
- Time: ১:৫৩ AM
+ Time: ৯:৫০ PM
  ***/
-@Component
-public class HelloWorldImpl implements HelloWorldService {
+public class HelloWorldServiceRussianImpl implements HelloWorldService {
+    @Override
     public String sayHello() {
-        System.out.println("Hello World");
-        return null;
+        return "Привет мир";
     }
 
     @Override
     public String getGreeting() {
-        return "Hello World";
+        return "Привет мир";
     }
 }
