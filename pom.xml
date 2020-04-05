@@ -33,10 +33,6 @@
             <artifactId>tomcat-jasper</artifactId>
             <version>9.0.29</version>
         </dependency>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6ae2f49 (WIP 1:47)
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -48,7 +44,6 @@
             <version>1.18.8</version>
             <scope>provided</scope>
         </dependency>
-<<<<<<< HEAD
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -76,13 +71,6 @@
 <!--            <groupId>org.thymeleaf.extras</groupId>-->
 <!--            <artifactId>thymeleaf-extras-java8time</artifactId>-->
 <!--        </dependency>-->
-<<<<<<< HEAD
-=======
->>>>>>> 325afc1 (Dependency Injection)
-=======
->>>>>>> 6ae2f49 (WIP 1:47)
-=======
->>>>>>> 7e68c2e (Sprng Security Implemented)
     </dependencies>
 
     <build>
