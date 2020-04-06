@@ -1,4 +1,4 @@
-package com.spring.udemy.service;
+package com.spring.udemy.services;
 
 import com.spring.udemy.impl.*;
 
@@ -26,7 +26,7 @@ public class HelloWorldFactory {
                 service = new HelloWorldServiceGermanImpl();
                 break;
             case "pl":
-                service = new HelloWorldServicePolish();
+                service = new HelloWorldServicePolishImpl();
                 break;
             case "ru":
                 service = new HelloWorldServiceRussianImpl();

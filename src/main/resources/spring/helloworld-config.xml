@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="helloWorldFactory" class="guru.springframework.services.HelloWorldFactory"/>
+    <bean id="helloWorldFactory" class="com.spring.udemy.services.HelloWorldFactory"/>
 
     <bean id="french" factory-bean="helloWorldFactory" factory-method="createHelloWorldService">
         <constructor-arg value="fr"/>

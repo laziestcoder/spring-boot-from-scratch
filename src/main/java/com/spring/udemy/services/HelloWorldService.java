@@ -1,4 +1,4 @@
-package com.spring.udemy.service;
+package com.spring.udemy.services;
 
 /***
  Created by IntelliJ IDEA.

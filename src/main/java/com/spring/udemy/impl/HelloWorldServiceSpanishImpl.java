@@ -1,7 +1,9 @@
 package com.spring.udemy.impl;
 
-import com.spring.udemy.service.HelloWorldService;
+import com.spring.udemy.services.HelloWorldService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class HelloWorldServiceSpanishImpl implements HelloWorldService {
 
     @Override

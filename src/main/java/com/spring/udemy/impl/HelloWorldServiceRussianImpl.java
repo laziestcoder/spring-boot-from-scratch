@@ -1,6 +1,7 @@
 package com.spring.udemy.impl;
 
-import com.spring.udemy.service.HelloWorldService;
+import com.spring.udemy.services.HelloWorldService;
+import org.springframework.stereotype.Service;
 
 /***
  Created by IntelliJ IDEA.
@@ -8,6 +9,7 @@ import com.spring.udemy.service.HelloWorldService;
  Date: ৫/৪/২০
  Time: ৯:৫০ PM
  ***/
+@Service
 public class HelloWorldServiceRussianImpl implements HelloWorldService {
     @Override
     public String sayHello() {
