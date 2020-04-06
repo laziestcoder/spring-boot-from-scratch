@@ -1,5 +1,24 @@
 package com.spring.udemy.controller;
 
+import com.spring.udemy.domain.Customer;
+import com.spring.udemy.services.CustomerService;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.*;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.beans.HasPropertyWithValue.hasProperty;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 /***
  Created by IntelliJ IDEA.
  User: towfiq
