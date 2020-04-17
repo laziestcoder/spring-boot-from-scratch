@@ -22,6 +22,12 @@ public class SpringApplicationUdemyCourse {
 //        GreetingController controller = (GreetingController) ctx.getBean("greetingController");
 
 //        controller.sayHello();
+
+//        for (String name : ctx.getBeanDefinitionNames()){
+//            System.out.println(name);
+//        }
+//        System.out.println("******* Bean Count *******");
+//        System.out.println(ctx.getBeanDefinitionCount());
     }
 
 }

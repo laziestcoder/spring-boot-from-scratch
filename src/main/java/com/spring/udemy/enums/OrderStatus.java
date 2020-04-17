@@ -7,5 +7,7 @@ package com.spring.udemy.enums;
  Time: ৯:২৭ PM
  ***/
 public enum OrderStatus {
-    NEW, ALLOCATED, SHIPPED
+    NEW,
+    ALLOCATED,
+    SHIPPED
 }

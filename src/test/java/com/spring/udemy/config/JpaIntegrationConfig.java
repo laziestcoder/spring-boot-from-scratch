@@ -17,6 +17,6 @@ import org.springframework.test.context.ActiveProfiles;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan("com.spring.udemy")
-@ActiveProfiles("jpadao")
+//@ActiveProfiles("jpadao")
 public class JpaIntegrationConfig {
 }
