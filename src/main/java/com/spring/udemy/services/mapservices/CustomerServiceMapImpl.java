@@ -1,13 +1,12 @@
-package com.spring.udemy.impl;
+package com.spring.udemy.services.mapservices;
 
 import com.spring.udemy.domain.Customer;
 import com.spring.udemy.domain.DomainObject;
-import com.spring.udemy.services.AbstractMapService;
+import com.spring.udemy.services.mapservices.AbstractMapService;
 import com.spring.udemy.services.CustomerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.List;
 
 /***
@@ -18,7 +17,7 @@ import java.util.List;
  ***/
 @Service
 @Profile("map")
-public class CustomerServiceImpl extends AbstractMapService implements CustomerService {
+public class CustomerServiceMapImpl extends AbstractMapService implements CustomerService {
 
     @Override
     public List<DomainObject> listAll() {

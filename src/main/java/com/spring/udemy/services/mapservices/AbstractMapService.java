@@ -1,4 +1,4 @@
-package com.spring.udemy.services;
+package com.spring.udemy.services.mapservices;
 
 import com.spring.udemy.domain.DomainObject;
 

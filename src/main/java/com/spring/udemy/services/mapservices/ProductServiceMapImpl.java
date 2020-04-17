@@ -1,14 +1,12 @@
-package com.spring.udemy.impl;
+package com.spring.udemy.services.mapservices;
 
 import com.spring.udemy.domain.DomainObject;
 import com.spring.udemy.domain.Product;
-import com.spring.udemy.services.AbstractMapService;
+import com.spring.udemy.services.mapservices.AbstractMapService;
 import com.spring.udemy.services.ProductService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.List;
 
 /***
@@ -19,7 +17,7 @@ import java.util.List;
  ***/
 @Service
 @Profile("map")
-public class ProductServiceImpl extends AbstractMapService implements ProductService {
+public class ProductServiceMapImpl extends AbstractMapService implements ProductService {
 
     @Override
     public List<DomainObject> listAll() {

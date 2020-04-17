@@ -1,4 +1,4 @@
-package com.spring.udemy.impl;
+package com.spring.udemy.services.jpaservices;
 
 /***
  Created by IntelliJ IDEA.
@@ -18,7 +18,7 @@ import java.util.List;
 
 @Service
 @Profile("jpadao")
-public class CustomerServiceJPADaoImpl implements CustomerService {
+public class CustomerServiceJpaDaoImpl implements CustomerService {
     private EntityManagerFactory emf;
 
     @PersistenceUnit
