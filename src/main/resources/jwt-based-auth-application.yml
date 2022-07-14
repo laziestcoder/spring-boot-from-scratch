@@ -1,0 +1,41 @@
+server:
+  # Server bind address
+  address: "${HTTP_BIND_ADDRESS:0.0.0.0}"
+  # Server bind port
+  port: "${HTTP_BIND_PORT:8102}"
+
+# Application info
+app:
+  # Application version
+  version: "@project.version@"
+
+# Security parameters
+auth:
+  cookie:
+    hmac-key: "y.E@EA!FbtCwXYB-2v_n.!*xgzRqgtbq2d2_A_U!W2hubL@URHRzNP96WNPxEcXK"
+
+spring:
+  data:
+    jpa:
+      repositories:
+        enabled: "true"
+  jpa:
+    properties:
+      javax.persistence.query.timeout: "${JAVAX_PERSISTENCE_QUERY_TIMEOUT:30000}"
+    open-in-view: "false"
+    hibernate:
+      ddl-auto: "none"
+    database-platform: "${SPRING_JPA_DATABASE_PLATFORM:org.hibernate.dialect.MySQLDialect}"
+  datasource:
+    driverClassName: "${SPRING_DRIVER_CLASS_NAME:com.mysql.cj.jdbc.Driver}"
+    url: "${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/towfiq-test-project}"
+    username: "${SPRING_DATASOURCE_USERNAME:test}"
+    password: "${SPRING_DATASOURCE_PASSWORD:test}"
+    hikari:
+      maximumPoolSize: "${SPRING_DATASOURCE_MAXIMUM_POOL_SIZE:16}"
+
+  ldap:
+    embedded:
+      ldif: "classpath:test-server.ldif"
+      base-dn: "dc=bkash,dc=com"
+      port: "8389"
