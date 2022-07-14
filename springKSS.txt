@@ -1,0 +1,56 @@
+Spring Boot is the most popular Java Framework out there.
+Let's see what you should know and learn about Spring Boot.
+
+🔵Spring Framework Basics
+Why Spring Framework?
+Features and Advantages of Spring Framework.
+Spring Bean Lifecycle
+Dependency Injection
+Different ways to configure Spring application
+
+🔵Spring AOP
+What is Aspect Oriented Programming (AOP)?
+Understanding AOP with different real-world Examples
+
+🔵Spring Boot
+What is Spring Boot?
+Advantages of Spring Boot
+Spring Initializr
+Spring Boot Starters
+Creating REST APIs with Spring Boot
+Spring Boot DevTools
+Exception handling
+Logging in Spring Boot.
+Creating Different Layers of the Application
+Managing Configuration
+Managing Profiles
+Spring Boot Actuator
+Custom Actuator Endpoints and managing endpoints.
+
+🔵Unit Testing (Junit and Mockito)
+What is Junit
+Important of Unit testing and Integration Testing
+Implementing Unit Testing
+Implementing JUnit and Mockito for different Spring Boot Layers
+
+🔵 Spring Data JPA
+Importance and Advantages of Spring Data JPA
+Annotations
+Hibernate validations
+Database Migration
+Entity Relationships
+Transaction Management
+Repositories and Entity Managers
+
+🔵 Spring Security
+Implementing Spring Security with Spring Boot
+What is OAuth 2.0 and OpenID Connect?
+Implementing OAuth 2.0 with Spring Security and Spring Boot
+Implementing Custom Auth Server, Resource Server, and Clients.
+
+If you are interested, you can check this tutorial which covers everything about Spring Boot Framework and get you started working on Spring Boot from Day Zero.
+
+Link in the comments below. Share and Comment for better reach
+
+
+https://www.youtube.com/watch?v=zvR-Oif_nxg
