@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: spring-mysql
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_DATABASE: towfiq-test-project
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: towfiq@123
+#    volumes:
+#      - ../mysql:/var/lib/mysql
