@@ -1,4 +1,4 @@
-package com.spring.securityapp.cookie;
+package com.spring.securityapp.jwt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,13 +6,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class CookieBasedAuthApplication {
+public class JwtBasedAuthApplication {
 
     private static final String SPRING_CONFIG_NAME_KEY = "--spring.config.name";
-    private static final String DEFAULT_SPRING_CONFIG_PARAM = SPRING_CONFIG_NAME_KEY + "=" + "cookie-based-auth-application";
+    private static final String DEFAULT_SPRING_CONFIG_PARAM = SPRING_CONFIG_NAME_KEY + "=" + "jwt-based-auth-application";
 
     public static void main(String[] args) {
-        SpringApplication.run(CookieBasedAuthApplication.class, updateArguments(args));
+        SpringApplication.run(JwtBasedAuthApplication.class, updateArguments(args));
     }
 
     private static String[] updateArguments(String[] args) {
